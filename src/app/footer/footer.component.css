@@ -1,0 +1,18 @@
+.footer-background{
+    background-color: #2c3e50;
+}
+.icon-footer{
+    font-size: 20px ;
+    margin: 5px;
+    padding: 8px;
+    border: 1px solid #fff ;
+    border-radius:50% ;
+}
+.about-text-footer{
+    font-size: 14px;
+}
+.footer-secondBackground{
+    background-color: #182430;
+    padding-block: 30px;
+    text-align: center;
+}

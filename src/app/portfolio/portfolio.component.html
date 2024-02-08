@@ -1,0 +1,24 @@
+<section class="text-center fw-bolder c">
+    <h1 class="c">PORTFOLIO COMPONENT</h1>
+    <div class="d-flex align-items-center justify-content-center mb-3 ">
+        <div class="line me-3 c"></div>
+        <i class="fa-solid fa-star fa-1x c"></i>
+        <div class="line ms-3 c"></div>
+    </div>
+    <div class="container">
+        <div class="row g-5">
+            <div *ngFor="let image of images" class="col-md-4 ">
+                <div class="position-relative overflow-hidden">
+                    <img [src]="image.src" alt="alt" class="w-100 rounded">
+                    <div class="layer position-absolute start-0 w-100 top-0 h-100 d-flex justify-content-center align-items-center"
+                        (click)="showImage(image.src)">
+                        <i class="fa-solid fa-5x fa-plus text-white"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="showImageModal" class=" position-fixed start-0 w-100 top-0 h-100 bg-primary bg-opacity-25 d-flex justify-content-center align-items-center"(click)="hideImage()">
+        <img [src]="clickedImage" alt="Clicked Image">
+    </div>
+</section>

@@ -1,0 +1,26 @@
+<section class=" fw-bolder c ">
+    <h1 class="c text-center">CONATCT SECTION</h1>
+    <div class="d-flex align-items-center justify-content-center mb-3 ">
+        <div  class="line me-3 c"></div>
+        <i class="fa-solid fa-star fa-1x c"></i>
+        <div  class="line ms-3 c"></div>
+    </div>
+    <form class="w-50 p-3 mx-auto mt-5 ">
+        <span class="userName" [ngClass]="{
+            'showUser':userType.length>0}">User Name</span>
+        <input type="text" placeholder="User Name" class=" input-style" id="userName"[(ngModel)]="userType" name="first">
+        
+        <input  type="number" placeholder="User Age" class=" input-style" id="userAge" name="age">
+        <h6 class="userMail" [ngClass]="{
+            'showMail':userMail.length>0}">User Mail</h6>
+        <input type="email" placeholder="E-Mail" class=" input-style" id="mail" [(ngModel)]="userMail" name="mail">
+        <h6 class="userPass" [ngClass]="{
+            'showPass':userPass.length>0}">User Password</h6>
+
+
+        <input type="password" placeholder="User password" class=" input-style" id="password"[(ngModel)]="userPass" name="mail">
+        <button class="btnn btn " type="button">send message</button>
+    </form>
+   
+    
+</section>
